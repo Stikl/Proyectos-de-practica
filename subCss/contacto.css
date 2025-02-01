@@ -2,9 +2,9 @@
 body {
     font-family: sans-serif;
     margin: 0;
-    background-color: #f2f2f2; /* Gris claro de fondo */
-    overflow: hidden; /* Evita barras de desplazamiento innecesarias */
-    perspective: 800px; /* Para efectos 3D */
+    background-color: #f2f2f2; 
+    overflow: hidden; 
+    perspective: 800px; 
 }
 
 .container {
@@ -27,7 +27,7 @@ body {
 header {
     background-color: white;
     padding: 20px;
-    border-bottom: 1px solid #ddd; /* Línea divisoria */
+    border-bottom: 1px solid #ddd; 
     transform: rotateX(-10deg);
     opacity: 0;
     animation: headerAnimation 1s ease forwards;
@@ -59,25 +59,25 @@ header {
 .profile img {
     width: 80px;
     height: 80px;
-    border-radius: 50%; /* Foto de perfil circular */
+    border-radius: 50%; 
     margin-right: 20px;
-    transition: transform 0.3s ease; /* Transición suave */
+    transition: transform 0.3s ease; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .profile img:hover {
-    transform: scale(1.1) rotate(10deg); /* Escala y rota al pasar el cursor */
+    transform: scale(1.1) rotate(10deg); 
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
 .user-info h1 {
     margin: 0;
-    transition: color 0.3s ease; /* Transición suave */
+    transition: color 0.3s ease; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .user-info h1:hover {
-    color: #007bff; /* Cambia de color al pasar el cursor */
+    color: #007bff; 
     transform: scale(1.05);
 }
 
@@ -92,7 +92,7 @@ nav ul {
 nav li {
     display: inline;
     margin-right: 20px;
-    transition: transform 0.3s ease; /* Transición suave */
+    transition: transform 0.3s ease; 
 }
 
 nav li a {
@@ -119,7 +119,7 @@ main {
 }
 
 .projects {
-    flex: 2; /* Ocupa 2/3 del espacio */
+    flex: 2; 
     margin-right: 20px;
 }
 
@@ -127,8 +127,8 @@ main {
     background-color: white;
     padding: 20px;
     margin-bottom: 20px;
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     overflow: hidden;
     transition: transform 0.3s ease;
 }
@@ -141,15 +141,15 @@ main {
 .project img {
     max-width: 100%;
     margin-bottom: 10px;
-    transition: transform 0.3s ease; /* Transición suave */
+    transition: transform 0.3s ease; 
 }
 
 .project img:hover {
-    transform: scale(1.02); /* Escala al pasar el cursor */
+    transform: scale(1.02); 
 }
 
 .about {
-    flex: 1; /* Ocupa 1/3 del espacio */
+    flex: 1; 
     background-color: white;
     padding: 20px;
     border-radius: 5px;
@@ -166,11 +166,11 @@ main {
 .about img {
     max-width: 100%;
     margin-bottom: 10px;
-    transition: transform 0.3s ease; /* Transición suave */
+    transition: transform 0.3s ease; 
 }
 
 .about img:hover {
-    transform: scale(1.02); /* Escala al pasar el cursor */
+    transform: scale(1.02); 
 }
 
 /* Pie de página (Footer) */
@@ -199,7 +199,7 @@ footer {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: -1; /* Detrás del contenido principal */
+    z-index: -1; 
     background: linear-gradient(45deg, #e66465, #9198e5, #70d6ff);
     background-size: 400% 400%;
     animation: gradientRotate 15s ease infinite;
@@ -219,7 +219,7 @@ footer {
 
 /* Estilos para la página de contacto */
 .contact {
-    flex: 1; /* Ocupa todo el ancho disponible */
+    flex: 1; 
     background-color: white;
     padding: 40px;
     border-radius: 5px;
@@ -267,30 +267,30 @@ footer {
 
 .form-group input,
 .form-group textarea {
-    /* ... (estilos existentes) ... */
-    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transiciones */
+    
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; 
 }
 
 .form-group input:hover,
 .form-group textarea:hover {
-    border-color: #007bff; /* Cambia el color del borde */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2); /* Añade sombra */
+    border-color: #007bff; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.2); 
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
-    border-color: #007bff; /* Cambia el color del borde al enfocar */
-    outline: none; /* Elimina el contorno predeterminado */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); /* Añade una sombra más intensa */
+    border-color: #007bff; 
+    outline: none; 
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); 
 }
 
 .form-group button {
     /* ... (estilos existentes) ... */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Transiciones */
+    transition: background-color 0.3s ease, transform 0.3s ease; 
 }
 
 .form-group button:hover {
-    background-color: #0056b3; /* Cambia el color de fondo */
-    transform: scale(1.05); /* Escala ligeramente */
-    cursor: pointer; /* Cambia el cursor a una mano */
+    background-color: #0056b3; 
+    transform: scale(1.05); 
+    cursor: pointer; 
 }
