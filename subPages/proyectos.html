@@ -10,11 +10,11 @@
     <div class="container">
         <header>
             <div class="profile">
-                <img src="foto-de-perfil.jpg" alt="Tu foto de perfil">
+                <img src="../WhatsApp Image 2025-01-31 at 4.50.47 PM.jpeg" alt="Tu foto de perfil">
                 <div class="user-info">
-                    <h1>Tu Nombre</h1>
-                    <p>@TuNombreDeUsuario</p>
-                    <p>Tu breve bio o descripción.</p>
+                    <h1>Diego Andres Ladino Arevalo</h1>
+                    <p>ladinodiego.dev@gmail.com</p>
+                    <p>Diseñador Web y Programador en JavaScript.</p>
                 </div>
             </div>
             <nav>
@@ -45,12 +45,34 @@
 
                 <h2>Tipos de Contrato</h2>
                 <p>Selecciona el tipo de contrato:</p>
-                <select name="contractType" id="contractType">
-                    <option value="indefinido">Indefinido</option>
-                    <option value="determinado">Determinado</option>
-                    <option value="proyecto">Por Proyecto</option>
-                    <option value="colaboracion">Colaboración</option>
-                    </select>
+
+                <button class="c1" >Contrato 1</button>
+                <button class="c2" >Contrato 2</button>
+                <button class="c3" >Contrato 3</button>
+
+                <div class="c1" hidden>
+                    <h2>Tipo de contrato indefinido</h2>
+
+                    <p>Este Contrato unicamente sera elegido por el contratista/empleador.<br><br> El cual es un contrato en el que el contratista/empleador me contrata a mi de manera indefinida hasta que se complete el proyecto o no sean requiridos mis servicios, las metodologias de pago son las que se ven en la lista.<br><br>Se suministrara un documento para que el empleado y el empleador lo firmen y asi realizar el acuerdo.</p>
+
+                    <button id="none">Seleccionar otro contrato</button>
+                </div>
+
+                <div class="c2" hidden>
+                    <h2>tipo de contrato por proyecto</h2>
+
+                    <p>Este Contrato unicamente sera elegido por el contratista/empleador.<br><br> El cual es un contrato en el que el contratista/empleador para realizar un proyecto antes acordado, este sera diferente al primero contrato pues el empleador me contratara unicamente para la creacion del proyecto.<br><br>Se suministrara un documento para que el empleado y el empleador lo firmen y asi realizar el acuerdo.<br><br></p>
+
+                    <button id="none">Seleccionar otro contrato</button>
+                </div>
+
+                <div class="c3" hidden>
+                    <h2>Tipo de Contrato de afiliado</h2>
+
+                    <p>Este Contrato unicamente sera elegido por el contratista/empleador.<br><br> El cual es un contrato en el que el coste economico sera reducido a cambio de beneficios por parte de ambas personas/empresas.<br><br> este contrato se centra mas en beneficios como: Publicidad por parte de ambas personas/empresas, posibilidad de intercambiar contactos, y demas cosas pactadas.<br><br>Se suministrara un documento para que el empleado y el empleador lo firmen y asi realizar el acuerdo.</p>
+
+                    <button id="none">Seleccionar otro contrato</button>
+                </div>
             </section>
         </main>
 
@@ -58,5 +80,7 @@
             <p>Derechos reservados &copy; 2024</p>
         </footer>
     </div>
+
+    <script src="../Javascript/proyectos.js"></script>
 </body>
 </html>
