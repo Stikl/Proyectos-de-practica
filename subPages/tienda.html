@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda</title>
+    <link rel="stylesheet" href="../subCss/tienda.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Tienda</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="acerda-de.html">Acerca de</a></li>
+                    <li><a href="proyectos.html">Proyectos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="products">
+                <h2>Productos Disponibles</h2>
+                <div class="product" id="producto1">
+                    <h3>Web Informativa</h3>
+                    <p>Una web para que los clientes sepan que vendes y cuales son tus precios, tambien pueden ver todo sobre tu negocio y demas cosas.</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product" id="producto2">
+                    <h3>Tienda Online</h3>
+                    <p>Una tienda en la que puedes vender tus articulos digitales y tus servicios, como asesorias, couching de videojuegos o cualquier otro producto.</p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product" id="producto3">
+                    <h3>Trabajos Universitarios</h3>
+                    <p>Si necesitas un poco de ayuda con algun trabajo que tengas que hacer o necesites a alguien que te ayude a resolver problemas dificiles compra este servicio.</p>
+                    <button>Comprar</button>
+                </div>
+                <!-- Agregar más productos según sea necesario -->
+            </section>
+            <section class="cart">
+                <h2>Carrito de Compras</h2>
+                <ul id="cart-items"></ul>
+                <p>Total: $<span id="cart-total">0</span></p>
+                <button id="checkout">Finalizar Compra</button>
+            </section>
+        </main>
+        <footer>
+            <p>Derechos reservados &copy; 2024</p>
+        </footer>
+    </div>
+    <script src="../Javascript/tienda.js"></script>
+    <script src="../server.js"></script>
+</body>
+</html>

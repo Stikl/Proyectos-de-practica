@@ -3,8 +3,6 @@ body {
     font-family: sans-serif;
     margin: 0;
     background-color: #f2f2f2; 
-    /* overflow: hidden; */
-    perspective: 800px;
 }
 
 .container {
@@ -27,7 +25,7 @@ body {
 header {
     background-color: white;
     padding: 20px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #ddd; 
     transform: rotateX(-10deg);
     opacity: 0;
     animation: headerAnimation 1s ease forwards;
@@ -38,47 +36,6 @@ header {
         transform: rotateX(0deg);
         opacity: 1;
     }
-}
-
-.profile {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    transform: translateX(-20px);
-    opacity: 0;
-    animation: profileAnimation 1s ease forwards;
-}
-
-@keyframes profileAnimation {
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
-.profile img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-right: 20px;
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.profile img:hover {
-    transform: scale(1.1) rotate(10deg);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.user-info h1 {
-    margin: 0;
-    transition: color 0.3s ease;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.user-info h1:hover {
-    color: #007bff;
-    transform: scale(1.05);
 }
 
 nav ul {
@@ -92,7 +49,7 @@ nav ul {
 nav li {
     display: inline;
     margin-right: 20px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease; 
 }
 
 nav li a {
@@ -115,61 +72,37 @@ nav li a:hover {
 /* Contenido principal (Main Content) */
 main {
     display: flex;
+    flex-direction: column;
     margin-top: 20px;
 }
 
-.projects {
-    flex: 2;
+.products {
+    flex: 2; 
     margin-right: 20px;
 }
 
-.project {
+.product {
     background-color: white;
     padding: 20px;
     margin-bottom: 20px;
-    border-radius: 5px;
+    border-radius: 5px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     overflow: hidden;
     transition: transform 0.3s ease;
 }
 
-.project:hover {
+.product:hover {
     transform: scale(1.02);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
-.project img {
+.product img {
     max-width: 100%;
     margin-bottom: 10px;
     transition: transform 0.3s ease; 
 }
 
-.project img:hover {
-    transform: scale(1.02); 
-}
-
-.about {
-    flex: 1; 
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
-
-.about:hover {
-    transform: scale(1.02);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-.about img {
-    max-width: 100%;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease; 
-}
-
-.about img:hover {
+.product img:hover {
     transform: scale(1.02); 
 }
 

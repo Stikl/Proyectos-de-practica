@@ -1,6 +1,3 @@
-
-
-
 document.addEventListener('DOMContentLoaded', function() {
 
     const botonesContrato = document.querySelectorAll('button.c1, button.c2, button.c3');
@@ -30,5 +27,5 @@ document.addEventListener('DOMContentLoaded', function() {
         divPadre.hidden = true;
       });
     });
-  });
+});
 
